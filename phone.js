@@ -2,41 +2,41 @@ const phoneImages = ["images/blue.jpg", "images/green.jpg", "images/midnight.jpg
 
 let phoneCont = document.getElementById("phoneShow")
 
-let blue=document.getElementById("blue")
+let blue = document.getElementById("blue")
 
-let green=document.getElementById("green")
+let green = document.getElementById("green")
 
-let midNight=document.getElementById("midnight")
+let midNight = document.getElementById("midnight")
 
-let red=document.getElementById("red")
+let red = document.getElementById("red")
 
 
-let defaultImageItems = `<img src= "${phoneImages.at(0)}`
+let defaultImageItems = `<img src= "${phoneImages.at(0)}">`
 
 
 phoneCont.innerHTML = defaultImageItems
-let blueImgItems=`<img src= "${phoneImages.at(0)}">`
-let greenImgItems=`<img src= "${phoneImages.at(1)}">`
-let midNightImgItems=`<img src= "${phoneImages.at(2)}">`
-let redImgItems=`<img src= "${phoneImages.at(3)}">`
+let blueImgItems = `<img src= "${phoneImages.at(0)}">`
+let greenImgItems = `<img src= "${phoneImages.at(1)}">`
+let midNightImgItems = `<img src= "${phoneImages.at(2)}">`
+let redImgItems = `<img src= "${phoneImages.at(3)}">`
 
-blue.addEventListener("click", function(){
+blue.addEventListener("click", function () {
     phoneCont.innerHTML = defaultImageItems
-    })
-     
-    blue.addEventListener("click", function(){
-        phoneCont.innerHTML=blueImgItems
-        })
-    
+})
 
-    green.addEventListener("click", function(){
-        phoneCont.innerHTML=greenImgItems
-        })
+blue.addEventListener("click", function () {
+    phoneCont.innerHTML = blueImgItems
+})
 
-        midNight.addEventListener("click", function(){
-            phoneCont.innerHTML=midNightImgItems
-            })
 
-            red.addEventListener("click", function(){
-                phoneCont.innerHTML=redImgItems
-                })
+green.addEventListener("click", function () {
+    phoneCont.innerHTML = greenImgItems
+})
+
+midNight.addEventListener("click", function () {
+    phoneCont.innerHTML = midNightImgItems
+})
+
+red.addEventListener("click", function () {
+    phoneCont.innerHTML = redImgItems
+})
