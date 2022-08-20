@@ -1,0 +1,22 @@
+.gender div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.gender .female{
+    border: 1px solid rgba(0,0,0,0.3);
+    width: 32%;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: sans-serif;
+}
+
+.gender .male{
+    border: 1px solid rgba(0,0,0,0.3);
+    width: 32%;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: sans-serif;
+}
