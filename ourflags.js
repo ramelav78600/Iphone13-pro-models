@@ -2,9 +2,11 @@ const API = `https://restcountries.com/v2/all`;
 const onApiSuccess = (apiResponse) => {
     return apiResponse.json();
   };
-  
+      const regions = []
   
   const createFlagCard = (item) => {
+    regions.push(item.region)
+     (...new set(regions))
       
       const card = document.createElement("div");
       card.setAttribute("class", "card");
@@ -44,6 +46,8 @@ const onApiSuccess = (apiResponse) => {
   const onDataReceived = (data = []) => {
     console.log(":: onDataReceived ::", data);
     data.forEach(createFlagCard)
+    console.log( regions);
+    return [...new Set(regions)];
   }
   
 fetch(API)
